@@ -1,66 +1,61 @@
 body
 {
-	margin:.5px;
-	padding:.5px;
-	background:#d3d3d3;
+	background: #b0cdff;
 }
 header
 {
-	align-items:center;
-	background:#1b2127;
-	color:#fff;
-	display:flex;
 	height:70px;
-	position: fixed;
-	z-index: 2;
-	justify-content:space-between;
+	background:#1b2127;
 	width:100%;
+	color:#fff;
+	position: fixed;
+	top:-1px;
+	z-index: 2;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.container{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0 auto;
+	display: inherit;
+	justify-content: inherit;
+	align-items: inherit;
+	height: inherit;
 }
 ol
 {
 	display:flex;
-	height:inherit
-}
-ol li
-{
-	display:flex;
-	height:inherit;
-	padding:0 10px
-}
-
-li a,label
-{
 	align-items:center;
+	padding:0 10px;
 	background:#1b2127;
-	color:#fff;
 	cursor:pointer;
-	display:flex;
 	font-family:'Roboto',sans-serif;
 	height:inherit
 }
-
-li a:hover,label:hover
+ol a
 {
-	border:1px #fff solid
+	padding:0 10px;
+	color: #fff;
 }
-
-.menu
+ol label
 {
-	height:inherit
+	padding: 0 10px
 }
-
+ol a:hover, label:hover
+{
+	border-radius: 20px;
+	border:3px #026FFF solid;
+	color: #026FFF;
+}
 .hero
 {
-	margin-top: 70px;
 	height:300px;
-	width:100%;
+	background-color:#1b2127;
 	display:flex;
 	align-items:center;
-	background-color:#1b2127;
-	background-image:url(../images/hero.jpg);
-	background-position-x:right;
-	background-repeat:no-repeat;
-	background-size:500px 300px;
+	justify-content: space-between;
 }
 
 h1,h2,h3
@@ -73,14 +68,12 @@ h4,h5,h6,p
 {
 	font-family:'Merriweather',serif;
 }
-
 h1
 {
 	color:#fff;
-	font-size:40px;
+	font-size:36px;
 	letter-spacing:-.2px;
-	margin: 10px 0;
-	line-height:1.5
+	line-height:1.5;
 }
 
 h1 strong
@@ -88,29 +81,30 @@ h1 strong
 	color:#026FFF;
 	text-transform:uppercase
 }
-
+.hero_image{
+	object-fit: cover;
+}
+.portafolio{
+	background: #b0cdff;
+}
 h2
 {
 	font-size:28px;
-	padding:40px;
-	margin:20px;
-}
-
-.portfolio
-{
-	background: #d3d3d3;
-	display:block;
+	padding:10px;
+	margin:10px;
+	background: #fff;
+	border-radius: 20px;
 }
 
 .project
 {
 	align-items:center;
 	background:#fff;
-	border:1px solid gray;
-	border-radius:10px;
+	border-radius: 10px;
 	display:flex;
 	justify-content:space-between;
 	margin-bottom:15px;
+	
 	padding:20px
 }
 
@@ -126,7 +120,7 @@ h2
 
 .project-Title
 {
-	font-size:30px;
+	font-size:26px;
 	margin-bottom:10px
 }
 
@@ -149,19 +143,23 @@ p strong
 {
 	width:500px
 }
+.eventos{
+	background: #b0cdff;
+	margin-bottom: 15px;
+}
 
 .event-list
 {
 	display:flex;
 	flex-wrap:wrap;
-	justify-content:space-around;
+	background: #fff;
+	border-radius:10px;
 }
-
 .event
 {
 	width:480px;
 	margin:10px;
-	background:#f4f4f4	;
+	background:#98CA3F	;
 	border-radius:10px;
 	flex-shrink:0;
 	overflow:hidden;
@@ -201,11 +199,14 @@ p strong
 
 .event-link
 {
-	border:1px solid;
+	border:3px solid;
 	border-radius:5px;
 	color:#026FFF;
 	font-family:'Roboto',sans-serif;
 	padding:5px 20px
+}
+.contacto{
+	background: #026FFF
 }
 .contact
 {
@@ -228,7 +229,7 @@ input
     padding: 5px 25px;
 	margin: 10px 0;
 	font-family:'Merriweather',serif;
-	color:#98CA3F;
+	color:#1b2127;
 }
 
 form h3
@@ -240,18 +241,19 @@ button {
 	display: block;
 	background: transparent;
 	color: #fff;
-	padding: 5px 30px;
+	padding: 0 30px;
 	border-radius: 5px;
 	cursor: pointer;
 	margin-top: 5px;
 	font-family:'Roboto',sans-serif;
 	line-height: 2;
 	letter-spacing: 2px;
+	border: 3px #fff solid;
 }
-
-.social-list
+button:hover, .event-link:hover
 {
-    padding: 0 10px;
+	color: #98CA3F;
+	border:3px solid #98CA3F;
 }
 
 .social-link
@@ -260,7 +262,12 @@ button {
 	width:50px;
 	height:50px;
     background-size: 50px 50px;
-    margin: 0 10px;
+	margin: 5px;
+}
+.social-link:hover
+{	
+	background-color:#98CA3F;
+	border-radius: 15px;
 }
 
 a.social-link:nth-child(1)
@@ -291,9 +298,16 @@ footer
 	color:#fff;
 	display:flex;
 	justify-content:space-between;
-	padding:0 20px
+	height: 70px;
 }
-
+footer p{
+	display: flex;
+	align-items: center;
+	padding:0 20px;
+}
+.logo-platzi{
+	margin: 0 10px;
+}
 footer a
 {
 	color:#fff
