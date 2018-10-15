@@ -1,0 +1,310 @@
+body
+{
+	margin:.5px;
+	padding:.5px;
+	background:#d3d3d3;
+}
+header
+{
+	align-items:center;
+	background:#1b2127;
+	color:#fff;
+	display:flex;
+	height:70px;
+	position: fixed;
+	z-index: 2;
+	justify-content:space-between;
+	width:100%;
+}
+ol
+{
+	display:flex;
+	height:inherit
+}
+ol li
+{
+	display:flex;
+	height:inherit;
+	padding:0 10px
+}
+
+li a,label
+{
+	align-items:center;
+	background:#1b2127;
+	color:#fff;
+	cursor:pointer;
+	display:flex;
+	font-family:'Roboto',sans-serif;
+	height:inherit
+}
+
+li a:hover,label:hover
+{
+	border:1px #fff solid
+}
+
+.menu
+{
+	height:inherit
+}
+
+.hero
+{
+	margin-top: 70px;
+	height:300px;
+	width:100%;
+	display:flex;
+	align-items:center;
+	background-color:#1b2127;
+	background-image:url(../images/hero.jpg);
+	background-position-x:right;
+	background-repeat:no-repeat;
+	background-size:500px 300px;
+}
+
+h1,h2,h3
+{
+	color:#026FFF;
+	font-family:'Roboto',sans-serif
+}
+
+h4,h5,h6,p
+{
+	font-family:'Merriweather',serif;
+}
+
+h1
+{
+	color:#fff;
+	font-size:40px;
+	letter-spacing:-.2px;
+	margin: 10px 0;
+	line-height:1.5
+}
+
+h1 strong
+{
+	color:#026FFF;
+	text-transform:uppercase
+}
+
+h2
+{
+	font-size:28px;
+	padding:40px;
+	margin:20px;
+}
+
+.portfolio
+{
+	background: #d3d3d3;
+	display:block;
+}
+
+.project
+{
+	align-items:center;
+	background:#fff;
+	border:1px solid gray;
+	border-radius:10px;
+	display:flex;
+	justify-content:space-between;
+	margin-bottom:15px;
+	padding:20px
+}
+
+.project-Details
+{
+	width:500px;
+}
+
+.project-Title,.event-Title
+{
+	color:#98CA3F
+}
+
+.project-Title
+{
+	font-size:30px;
+	margin-bottom:10px
+}
+
+.project-Tool,.project-Date,.project-Url
+{
+	margin:10px 0
+}
+
+.project-Description
+{
+	font-size:20px
+}
+
+p strong
+{
+	font-family:'Roboto',sans-serif
+}
+
+.project-Image-Container
+{
+	width:500px
+}
+
+.event-list
+{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+
+.event
+{
+	width:480px;
+	margin:10px;
+	background:#f4f4f4	;
+	border-radius:10px;
+	flex-shrink:0;
+	overflow:hidden;
+}
+
+.event img
+{
+	height:200px;
+	object-fit:cover;
+	width:480px
+}
+
+.event-Title
+{
+	font-size:24px;
+	font-family:'Roboto',sans-serif;
+	padding-bottom: 5px;
+}
+
+.event-Detail
+{
+	background:#fff;
+	margin:20px 40px;
+	margin-top:-40px;
+	padding:20px;
+	position:relative;
+	z-index: 1;
+	line-height: 1.5;
+	text-align:center	
+}
+
+.event-Description
+{
+	padding-bottom:20px;
+	text-align:left
+}
+
+.event-link
+{
+	border:1px solid;
+	border-radius:5px;
+	color:#026FFF;
+	font-family:'Roboto',sans-serif;
+	padding:5px 20px
+}
+.contact
+{
+	background:#026FFF;
+	height:150px;
+	display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    letter-spacing: 1px;
+}
+input
+{
+    background-image: url(../images/envelope.svg);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    border-radius: 5px;
+    padding: 5px 25px;
+	margin: 10px 0;
+	font-family:'Merriweather',serif;
+	color:#98CA3F;
+}
+
+form h3
+{
+	font-size:32px;
+	color:#fff;
+}
+button {
+	display: block;
+	background: transparent;
+	color: #fff;
+	padding: 5px 30px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 5px;
+	font-family:'Roboto',sans-serif;
+	line-height: 2;
+	letter-spacing: 2px;
+}
+
+.social-list
+{
+    padding: 0 10px;
+}
+
+.social-link
+{
+    display: inline-block;
+	width:50px;
+	height:50px;
+    background-size: 50px 50px;
+    margin: 0 10px;
+}
+
+a.social-link:nth-child(1)
+{
+    background-image: url(../images/instagram.svg);
+}
+a.social-link:nth-child(2)
+{
+    background-image: url(../images/facebook.svg);
+}
+a.social-link:nth-child(3)
+{
+    background-image: url(../images/twitter.svg);
+}
+a.social-link:nth-child(4)
+{
+    background-image: url(../images/linkedin.svg);
+}
+a.social-link:nth-child(5)
+{
+    background-image: url(../images/github.svg);
+}
+
+footer
+{
+	align-items:center;
+	background:#1b2127;
+	color:#fff;
+	display:flex;
+	justify-content:space-between;
+	padding:0 20px
+}
+
+footer a
+{
+	color:#fff
+}
+
+footer a:hover
+{
+	color:#98CA3F
+}
+
+footer img
+{
+	vertical-align:middle
+}
