@@ -18,32 +18,32 @@ header
 .container{
 	width: 1000px;
 	margin: 0 auto;
-	padding: 0 auto;
+	padding: 0;
 	display: inherit;
 	justify-content: inherit;
 	align-items: inherit;
 	height: inherit;
 }
-ol
+nav
 {
 	display:flex;
 	align-items:center;
 	padding:0 10px;
-	background:#1b2127;
-	cursor:pointer;
 	font-family:'Roboto',sans-serif;
 	height:inherit
 }
-ol a
+nav a
 {
 	padding:0 10px;
+	cursor:pointer;
 	color: #fff;
 }
-ol label
+label
 {
+	cursor:pointer;
 	padding: 0 10px
 }
-ol a:hover, label:hover
+nav a:hover, label:hover
 {
 	border-radius: 20px;
 	border:3px #026FFF solid;
@@ -75,7 +75,6 @@ h1
 	letter-spacing:-.2px;
 	line-height:1.5;
 }
-
 h1 strong
 {
 	color:#026FFF;
@@ -95,7 +94,6 @@ h2
 	background: #fff;
 	border-radius: 20px;
 }
-
 .project
 {
 	align-items:center;
@@ -104,41 +102,33 @@ h2
 	display:flex;
 	justify-content:space-between;
 	margin-bottom:15px;
-	
 	padding:20px
 }
-
 .project-Details
 {
 	width:500px;
 }
-
 .project-Title,.event-Title
 {
 	color:#98CA3F
 }
-
 .project-Title
 {
 	font-size:26px;
 	margin-bottom:10px
 }
-
 .project-Tool,.project-Date,.project-Url
 {
 	margin:10px 0
 }
-
 .project-Description
 {
 	font-size:20px
 }
-
 p strong
 {
 	font-family:'Roboto',sans-serif
 }
-
 .project-Image-Container
 {
 	width:500px
@@ -269,7 +259,6 @@ button:hover, .event-link:hover
 	background-color:#98CA3F;
 	border-radius: 15px;
 }
-
 a.social-link:nth-child(1)
 {
     background-image: url(../images/instagram.svg);
@@ -290,7 +279,6 @@ a.social-link:nth-child(5)
 {
     background-image: url(../images/github.svg);
 }
-
 footer
 {
 	align-items:center;
@@ -312,12 +300,10 @@ footer a
 {
 	color:#fff
 }
-
 footer a:hover
 {
 	color:#98CA3F
 }
-
 footer img
 {
 	vertical-align:middle
